@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SubWindow</title>
+</head>
+<body>
+<pre>
+    <script type="text/javascript">
+        <!--
+            //サブウィンドウを表す変数
+        var subwin;
+
+        function win_open(){
+            subwin=window.open('http://listenonrepeat.com/?v=4Zta2eLkL24#%5B%E4%BD%9C%E6%A5%AD%E7%94%A8BGM%5D%E3%82%A8%E3%82%A4%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%A3%E3%82%BD%E3%83%B3%E3%82%B0%E9%9B%86','sample',
+            'width=1200,height=800,scrollbars=yes,location=yes');
+        }
+
+        function win_close(){
+            if(subwin&&!subwin.closed){
+                subwin.close();
+            }
+        }
+        //-->
+    </script>
+
+    <input type="button"value="open"onclick="win_open()"/>
+    <input type="button"value="close"onclick="win_close()"/>
+
+</pre>
+</body>
+</html>
