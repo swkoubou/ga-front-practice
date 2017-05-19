@@ -1,0 +1,15 @@
+<div *ngIf="member">
+  <h2>{{member.name}} Tamper</h2>
+  <div><label>Position:</label>{{member.id}}</div>
+  <div><label>name:</label>{{member.name}}</div>
+  <div>
+    <label>Position:</label>
+    <input [(ngModel)]="member.id"placeholder="id"/>
+  </div>
+  <div>
+    <label>name:</label>
+    <input [(ngModel)]="member.name"placeholder="name"/>
+     </div>
+  <button (click)="save()">Save</button>
+  <button (click)="goBack()">Back</button>
+</div>
