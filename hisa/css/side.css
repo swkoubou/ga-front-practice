@@ -8,3 +8,7 @@ div{
 li{
   font-size: 15px;
 }
+a:hover{
+  background: cyan;
+  color: red;
+}
