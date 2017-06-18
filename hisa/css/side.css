@@ -8,7 +8,15 @@ div{
 li{
   font-size: 15px;
 }
+
+a{
+text-decoration: none;
+}
+
 a:hover{
-  background: cyan;
-  color: red;
+  color: black;
+}
+
+a:visited{
+  color: black;
 }
