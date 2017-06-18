@@ -20,12 +20,12 @@
   width: 28%;
 }
 
-#button{
+#Buttonlist{
   width: 30%;
   margin: 4vh auto 4vh;
 }
 
-#button input{
+#Buttonlist input{
   font-size: 100%;
   margin-right: 4vh;
   cursor: pointer;
@@ -37,6 +37,6 @@
   padding: 0 20px 0 20px;
 }
 
-#button input:hover{
+#Buttonlist input:hover{
   background-color: #FFF;
 }

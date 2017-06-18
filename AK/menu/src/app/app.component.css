@@ -1,9 +1,9 @@
-#UserList {
+#Userlist {
   border: solid;
   border-width: 1px;
 }
 
-#title {
+#Title {
   margin-top: 0;
   margin-left: 10px;
 }
@@ -11,12 +11,11 @@
 li {
   display: inline-block;
   font-size: 15px;
-  width: auto;
   cursor: pointer;
   margin-right: 3%;
 }
 
-#list {
+#Emplist {
   border: solid;
   border-width: 1px;
   width: 90%;
@@ -51,12 +50,12 @@ td, th {
   padding: 10px 20px;
 }
 
-#button{
+#Buttonlist{
   width: 20%;
   margin: 4vh auto 4vh;
 }
 
-#button input{
+#Buttonlist input{
   font-size: 100%;
   margin-right: 4vh;
   cursor: pointer;
@@ -68,6 +67,6 @@ td, th {
   padding: 0 20px 0 20px;
 }
 
-#button input:hover{
+#Buttonlist input:hover{
   background-color: #FFF;
 }
