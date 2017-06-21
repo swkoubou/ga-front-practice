@@ -1,0 +1,56 @@
+p{
+  font-size: 20px;
+  color: #C0C0C0;
+}
+
+pre{
+  font-size: 20px;
+  color: #C0C0C0;
+}
+
+
+.sei{
+  position:absolute;
+  left: 300px;
+  top:60px;
+}
+
+
+.add {
+    border: 1px solid #C0C0C0;
+}
+
+.form_sei{
+  position: absolute;
+  left: 300px;
+  top:100px;
+}
+
+.form_name{
+  position: absolute;
+  left: 520px;
+  top:100px;
+}
+
+input[type="file"]{
+  position: absolute;
+  left:300px;
+  top:140px;
+}
+
+.button_add{
+  position:relative;
+  left:290px;
+}
+
+.button_cancel{
+  position: relative;
+  left: 400px;
+  top:-25px;
+}
+
+.form_mail{
+  position:absolute;
+  left: 300px;
+  top:180px;
+}

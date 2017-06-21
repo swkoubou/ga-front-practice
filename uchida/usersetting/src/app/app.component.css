@@ -1,0 +1,51 @@
+p{
+  font-size: 20px;
+  color: #C0C0C0;
+}
+
+pre{
+  font-size: 20px;
+  color: #C0C0C0;
+}
+
+
+.sei{
+  position:absolute;
+  left: 300px;
+  top:60px;
+}
+
+
+.setting {
+    border: 1px solid #C0C0C0;
+}
+
+.form_sei{
+  position: absolute;
+  left: 300px;
+  top:100px;
+}
+
+.form_name{
+  position: absolute;
+  left: 520px;
+  top:100px;
+}
+
+input[type="file"]{
+  position: absolute;
+  left:300px;
+  top:140px;
+}
+
+.button_cmp{
+  position:relative;
+  padding: 0px 0px 20px 0px;
+  left:290px;
+}
+
+.button_cancel{
+  position: relative;
+  left: 400px;
+  top:-45px;
+}
