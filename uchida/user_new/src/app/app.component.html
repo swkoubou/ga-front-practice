@@ -13,7 +13,8 @@
   <input type="text" placeholder="名を入力して下さい">
 </div>
 <p style="font-weight:bold">写真</p>
-<input type="file">
+<input type="file" (change)="uho($event)"><br />
+<img class='image' width="100px" height="100px">
 <p style="font-weight:bold">メールアドレス</p>
 <div class="form_mail">
   <input type="text" placeholder="メールアドレスを入力して下さい" style="width:350px;">

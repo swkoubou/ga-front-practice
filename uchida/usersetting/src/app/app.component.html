@@ -13,7 +13,8 @@
   <input type="text" placeholder="名を入力して下さい">
 </div>
 <p style="font-weight:bold">写真</p>
-<input type="file">
+<input type="file" (change)="uho($event)"><br />
+<img class='image' width="100px" height="100px">
 <div class="button_cmp">
   <input type="button" value="完了" onclick="" >
 </div>
