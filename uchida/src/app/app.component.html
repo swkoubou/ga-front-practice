@@ -1,0 +1,46 @@
+
+<div id='Userlist'>
+  <form id='hi'>
+    <select (change)='FrontDay($event.target.value)'>
+      <option *ngFor="let n of month">
+        {{n.month}}
+      </option>
+    </select>月：
+    <select>
+      <option *ngFor="let n of fday">
+        {{n.day}}
+      </option>
+    </select>日　～　
+    <select  (change)='BackDay($event.target.value)'>
+      <option *ngFor="let n of month">
+        {{n.month}}
+      </option>
+    </select>月：
+    <select>
+      <option *ngFor="let n of bday">
+        {{n.day}}
+      </option>
+    </select>日
+  </form>
+  <div id="Emplist">
+    <table>
+	     <thead>
+			  <tr>
+				  <th>氏名</th>
+		      <th>心拍数</th>
+			    <th>ストレス</th>
+          <th>勤務時間</th>
+        </tr>
+	    </thead>
+	     <tbody>
+        <tr *ngFor="let Emp of VisibleList" (click)='EmpSetting(Emp)'>
+          <td>{{Emp.name}}</td>
+          <td>{{Emp.stress}}</td>
+          <td *ngIf='Emp.authority == false'>有</td>
+          <td *ngIf='Emp.authority == true'>無</td>
+          <td>{{Emp.time}}</td>
+        </tr>
+	    </tbody>
+    </table>
+  </div>
+</div>

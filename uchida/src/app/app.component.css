@@ -1,0 +1,73 @@
+#Userlist {
+  border: solid;
+  border-width: 1px;
+}
+
+#Title {
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+li {
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 3%;
+}
+
+#Emplist {
+  border: solid;
+  border-width: 1px;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 30px;
+  background-color: #EEE;
+  margin-bottom: 100px;
+}
+
+table {
+  width: 90%;
+  margin: auto;
+  border-collapse:collapse
+}
+
+thead tr{
+  border-bottom:solid #333;
+  border-width: 1px;
+}
+
+tbody tr{
+  cursor: pointer;
+  border-bottom:solid #BBB;
+  border-width: 1px;
+}
+
+tbody tr:hover{
+  background-color: #FFF;
+}
+
+td, th {
+  text-align: left;
+  padding: 10px 20px;
+}
+
+#Buttonlist{
+  width: 20%;
+  margin: 4vh auto 4vh;
+}
+
+#Buttonlist input{
+  font-size: 100%;
+  margin-right: 4vh;
+  cursor: pointer;
+  background-color: #EEE;
+  border-style: none;
+  border: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 0 20px 0 20px;
+}
+
+#Buttonlist input:hover{
+  background-color: #FFF;
+}
