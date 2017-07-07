@@ -1,0 +1,24 @@
+#header {
+  position: fixed !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #4E9ABE;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 100px 50px;
+}
+.header-left {
+  /*text-align: left;*/
+  float:left;
+  grid-column: 1/2;
+}
+
+.header-right {
+  /*text-align: right;*/
+  float:right;
+  color: black;
+  grid-column: 1/2;
+}
