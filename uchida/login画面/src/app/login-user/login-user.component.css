@@ -1,0 +1,76 @@
+
+#container {
+  text-align: center;
+  /*border: 1px solid;*/
+  border:none;
+  width: 70vw;
+  height:55vh;
+  margin: 15vh 0 0 15vw;
+  background-color:#ffffff;
+  box-shadow: 10px 10px 10px #c0c0c0;
+}
+
+#EmailForm {
+  width: 50%;
+  font-size: 1.5vw;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  box-shadow: none;
+  border-style:solid;
+  border-width: 1px;
+}
+
+#PassForm {
+  width: 50%;
+  font-size: 1.5vw;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  box-shadow: none;
+  border-style:solid;
+  border-width: 1px;
+  margin: 10px;
+}
+
+ul {
+  display: inline-block;
+  text-align: left;
+  font-size: 25px;
+}
+
+li:nth-child(2) {
+  font-weight: bold;
+}
+#login{
+  position:relative;
+  bottom: 10px;
+  left: 330px;
+  margin-top: 4%;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #ffffff;
+  border-color:#ffffff;
+  color: #28AF78;
+  font-size: 1.5vw;
+  padding: 5px 20px 5px 20px;
+  cursor: pointer;
+}
+
+#cancel{
+  position:relative;
+  bottom: 10px;
+  left: 300px;
+  margin-top: 4%;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #ffffff;
+  border-color:#ffffff;
+  color: #28AF78;
+  font-size: 1.5vw;
+  padding: 5px 20px 5px 20px;
+  cursor: pointer;
+}
+#login:hover{
+  background-color: #fff;
+}

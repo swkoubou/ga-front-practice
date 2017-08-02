@@ -1,0 +1,17 @@
+<div class="modal">
+  <div class="title">{{name}}</div>
+  <div class='inline'>
+    <h2>メールアドレス</h2>
+    <input type='text' value='{{email}}' placeholder="メールアドレスを入力してください"/>
+  </div>
+
+  <div class='inline'>
+    <h2>パスワード</h2>
+    <input type='text' placeholder="パスワードを入力してください"/>
+  </div>
+
+  <div id='Buttonlist'>
+    <input type='button' value='完了' />
+    <input type='button' value='キャンセル' (click)="ModalClose()"/>
+  </div>
+</div>

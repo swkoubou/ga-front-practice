@@ -1,0 +1,24 @@
+<label id='triggar' for='flag'>三</label>
+<input type='checkbox' id='flag' />
+<ul id='menu'>
+  <li (click)='Change_TopPage()'>個人モード</li>
+  <li (click)='Change_Admin()'>管理者モード</li>
+  <li (click)='Change_Setting()'>各種設定</li>
+  <li (click)='Change_Logout()'>ログアウト</li>
+</ul>
+<div id='container'>
+  <div id='left'>
+    <ul>
+      <li (click)='Change_UserSetting()'>個人設定</li>
+      <li (click)='Change_CreateUser()' *ngIf='admin'>新規追加</li>
+      <li (click)='Change_UserList()' *ngIf='admin'>ユーザ一覧</li>
+    </ul>
+  </div>
+
+  <div id='right'>
+    <app-userlist *ngIf='userlist'></app-userlist>
+    <app-createuser *ngIf='createuser'></app-createuser>
+    <app-usersetting *ngIf='usersetting'></app-usersetting>
+  </div>
+
+</div>

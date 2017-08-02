@@ -1,0 +1,25 @@
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.container {
+  border:solid;
+  border-width: 1px;
+  width: 70%;
+  height: 40%;
+  margin: auto;
+  position: fixed;
+  color: #000;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}

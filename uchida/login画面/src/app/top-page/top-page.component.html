@@ -1,0 +1,50 @@
+<label id='triggar' for='flag'>三</label>
+<input type='checkbox' id='flag' />
+<ul id='menu'>
+  <li (click)='Change_TopPage()'>個人モード</li>
+  <li (click)='Change_Admin()'>管理者モード</li>
+  <li (click)='Change_Setting()'>各種設定</li>
+  <li (click)='Change_Logout()'>ログアウト</li>
+</ul>
+<div id='container'>
+
+  <div class='item'>
+    <header>プロフィール</header>
+    <p>身長:{{Height}}cm</p>
+    <p>体重:{{Weight}}kg</p>
+  </div>
+
+  <div class='item box-2'>
+    <header>WorkTime</header>
+    <h1>まだ</h1>
+  </div>
+
+  <div class='item'>
+    <header>ユーザーのストレス</header>
+    <p>検知しました</p>
+  </div>
+
+  <div class='item'>
+    <header>Steps</header>
+    <div class='chart' style="display: block">
+      <canvas baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="barChartType"></canvas>
+    </div>
+  </div>
+
+  <div class='item'>
+    <header>Heart Beat</header>
+    <div class='chart' style="display: block">
+      <canvas baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="LineChartType"></canvas>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,81 @@
+#triggar{
+  width: 2vw;
+  font-size: 2vw;
+  position: absolute;
+  top:0.5vh;
+  left: 95vw;
+  margin-left: auto;
+  cursor: pointer;
+}
+#menu {
+  position: absolute;
+  margin: 0 0 0 0;
+  z-index: 110;
+  right: -340px; /* メニューのwidth + padding */
+  width: 8vw; /* メニューのwidth */
+  transition: left .5s, right .5s; /* アニメーション */
+  border: 3px solid #ccc;
+}
+#menu li{
+  font-size: 1vw;
+  margin-top: 1vh;
+  cursor: pointer;
+  list-style: none;
+  
+}
+#menu li:hover{
+  color: #888;
+}
+
+#flag{
+  display: none;
+}
+
+#flag:checked + #menu{
+  right:1vw;
+}
+#flag:checked ~ #container{
+  width: 85vw;
+}
+
+#container {
+  position: absolute;
+  top:8vh;
+  left: 1vw;
+  height: 90vh;
+  width: 98vw;
+  display: grid;
+  grid-gap:30px;
+  grid-template-columns: 2fr 4fr 4fr;
+  grid-template-rows: 5fr 5fr;
+  transition: width .5s; /* アニメーション */
+}
+.item {
+  padding: 10px;
+  border: 3px solid #ccc;
+  overflow: hidden;
+}
+
+.item header {
+  width: 100%;
+  margin: -100px 0 0 -100px;
+  padding: 100px 100px 10px 100px;
+  background-color: #DDD;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+.item p {
+  font-size: 1.8vw;
+  color: #999;
+}
+
+.box-2 {
+  grid-column: 2 / 4;
+}
+
+.chart {
+  margin-top: 1.5vh;
+  margin-left: 0.5vw;
+  width: 90%;
+}
