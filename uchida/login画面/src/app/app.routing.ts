@@ -17,6 +17,10 @@ const appRoutes:Routes = [
     component:LoginUserComponent
   },
   {
+    path:'logingroup',
+    component:LoginGroupComponent
+  },
+  {
     path:'toppage',
     component:TopPageComponent
   },

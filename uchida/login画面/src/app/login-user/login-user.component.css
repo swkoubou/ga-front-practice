@@ -1,49 +1,62 @@
-
+h1{
+  padding-left: 3vh;
+  /*padding-top:  3vh;*/
+}*
 #container {
-  text-align: center;
+  text-align:left;
   /*border: 1px solid;*/
+  border-radius: 10px;
   border:none;
-  width: 70vw;
+  width: 55vw;
   height:55vh;
-  margin: 15vh 0 0 15vw;
+  margin: 15vh auto;
   background-color:#ffffff;
   box-shadow: 10px 10px 10px #c0c0c0;
+
 }
 
 #EmailForm {
   width: 50%;
   font-size: 1.5vw;
   padding: 10px 10px 10px 10px;
-  border-radius: 10px;
+  border:none;
+  border-bottom:1px solid #d3d3d3;
   box-shadow: none;
-  border-style:solid;
   border-width: 1px;
+  margin-left: 40px;
+
 }
 
 #PassForm {
   width: 50%;
   font-size: 1.5vw;
   padding: 10px 10px 10px 10px;
-  border-radius: 10px;
   box-shadow: none;
-  border-style:solid;
+  border: none;
+  border-bottom:1px solid #d3d3d3;
   border-width: 1px;
   margin: 10px;
+  margin-left: 40px;
+
 }
 
 ul {
   display: inline-block;
   text-align: left;
-  font-size: 25px;
+  font-size: 2vw;
+  margin-left:40px;
 }
-
+li:nth-child(1) {
+  font-size: 1.5vw !important;
+  color: rgba(200, 200, 200,1);
+}
 li:nth-child(2) {
   font-weight: bold;
 }
 #login{
   position:relative;
   bottom: 10px;
-  left: 330px;
+  left: 400px;
   margin-top: 4%;
   border-radius: 5px;
   border-style: solid;
@@ -72,5 +85,6 @@ li:nth-child(2) {
   cursor: pointer;
 }
 #login:hover{
-  background-color: #fff;
+  color: #00d36f;
+  background-color: aliceblue;
 }

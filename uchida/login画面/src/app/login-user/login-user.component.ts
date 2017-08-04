@@ -17,4 +17,8 @@ export class LoginUserComponent implements OnInit {
   Change_Page():void{
     this.router.navigate(['/toppage']);
   }
+
+  Back_Page():void{
+    this.router.navigate(['/logingroup']);
+  }
 }

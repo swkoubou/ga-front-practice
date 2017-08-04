@@ -1,11 +1,11 @@
 <div id='container'>
   <h1>ログイン</h1>
-  <ul style="list-style-type:decimal">
+  <ul id="koumoku" style="list-style-type:decimal">
     <li>会社名の確認</li>
     <li>メールアドレス・パスワードの確認</li>
   </ul><br />
   <input type="text" id='EmailForm' placeholder="メールアドレスを入力してください"><br />
   <input type="text" id='PassForm' placeholder="パスワードを入力してください"><br />
   <input type="button" id='login' value=" ログイン " (click)='Change_Page()'>
-  <input type="button" id='cancel' value=" キャンセル ">
+  <input type="button" id='login' value=" キャンセル " (click)='Back_Page()'>
 </div>
