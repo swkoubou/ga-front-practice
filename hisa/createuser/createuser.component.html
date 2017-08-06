@@ -1,0 +1,40 @@
+<div id='container'>
+  <div class='box'>
+    <p>氏名</p>
+    <div class="name">
+      <p>姓</p>
+      <input type="text" placeholder="姓を入力して下さい">
+    </div>
+    <div class="name">
+      <p>名</p>
+      <input type="text" placeholder="名を入力して下さい">
+    </div>
+  </div>
+
+  <div class='box'>
+    <p>写真</p>
+    <div>
+      <input type="file" (change)="uho($event)">
+      <img class='image' width="150px" height="150px">
+    </div>
+  </div>
+
+  <div class='box'>
+    <p>メールアドレス</p>
+    <div>
+      <input type="text" placeholder="メールアドレスを入力して下さい">
+    </div>
+  </div>
+
+  <div class='box'>
+    <p>パスワード</p>
+    <div>
+      <input type="text" placeholder="パスワードを入力して下さい">
+    </div>
+  </div>
+
+  <div id="button_cmp">
+    <input type="button" value="完了" onclick="" >
+    <input type="button" value="キャンセル" onclick="" >
+  </div>
+</div>
