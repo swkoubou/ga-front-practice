@@ -1,0 +1,16 @@
+<header>gestion</header>
+<div id='container'>
+  <h1>ログイン</h1>
+  <ul id="koumoku" style="list-style-type:decimal">
+    <li>会社名の確認</li>
+    <li>メールアドレス・パスワードの確認</li>
+  </ul><br />
+  <div (keyup.enter)='UserLogin()'>
+    <input [(ngModel)]="Mailadress" id='EmailForm'  placeholder="メールアドレスを入力してください"><br />
+    <input [(ngModel)]="Password" id='PassForm'  placeholder="パスワードを入力してください"><br />
+  </div>
+  <div id='button_cmp'>
+    <input type="button" id='login' value=" ログイン " (click)='UserLogin()'>
+    <input type="button" id='cancel' value=" キャンセル " (click)='Back_Page()'>
+  </div>
+</div>
