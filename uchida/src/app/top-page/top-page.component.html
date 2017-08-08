@@ -1,0 +1,50 @@
+<div id="left">
+  <header>
+    <img [src]="User.ImageSrc" />
+    <p>{{User.Name}}</p>
+  </header>
+  <table class="type01">
+	<tr>
+    <td><i class="material-icons">accessibility</i></td>
+		<td>身長</td>
+    <td>{{User.Height}}cm</td>
+	</tr>
+	<tr>
+    <td><i class="material-icons">accessibility</i></td>
+    <td>体重</td>
+    <td>{{User.Weight}}kg</td>
+	</tr>
+	<tr>
+    <td><i class="material-icons">favorite</i></td>
+    <td>ストレス</td>
+    <td>
+      <p *ngIf="User.Stress">検知しました</p>
+      <p *ngIf="!User.Stress">ないです</p>
+    </td>
+	</tr>
+</table>
+<footer>
+  &copy;2017 Growbal Active
+</footer>
+</div>
+
+
+<div id='right'>
+  <header>
+    <img src='assets/images/gestion-logo.png' />
+  </header>
+  <div id='list'>
+    <input type='checkbox' id='flag' />
+    <ul id='menu'>
+      <li (click)='Change_ListView()' >個人モード<i class="material-icons">person</i></li>
+      <li (click)='Change_TopAdmin()' *ngIf='Admin'>管理者モード<i class="material-icons">group</i></li>
+      <li (click)='Change_Setting()' >各種設定<i class="material-icons">build</i></li>
+      <li (click)='Change_Logout()' >ログアウト<i class="material-icons">block</i></li>
+    </ul>
+    <label id='triggar' for='flag'><i class="material-icons">reorder</i></label>
+  </div>
+
+  <app-listview *ngIf='ListView'></app-listview>
+  <app-top-admin *ngIf='TopAdmin'></app-top-admin>
+  <app-setting *ngIf='Setting'></app-setting>
+</div>

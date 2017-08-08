@@ -1,0 +1,14 @@
+<div id='container'>
+  <div class='box'>
+    <p>氏名の変更</p>
+    <div class="name">
+      <input type="text" [(ngModel)]="FirstName" placeholder="姓">
+      <input type="text" [(ngModel)]="Lastname" placeholder="名">
+    </div>
+  </div>
+
+  <p id='error' *ngIf='Error'>{{Error}}</p>
+  <div id="button_cmp">
+    <input type="button" value="完了" (click)="Change_User()" >
+  </div>
+</div>

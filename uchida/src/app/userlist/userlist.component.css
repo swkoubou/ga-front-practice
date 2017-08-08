@@ -1,0 +1,57 @@
+li {
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 3%;
+}
+
+#Emplist {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+table {
+  width: 90%;
+  margin: auto;
+  border-collapse:collapse
+}
+
+thead tr{
+  border-bottom:solid #333;
+  border-width: 1px;
+}
+
+tbody tr{
+  cursor: pointer;
+}
+
+tbody tr:hover{
+  background-color: #EEE;
+}
+
+td, th {
+  text-align: left;
+  padding: 10px 20px;
+}
+
+#button_cmp{
+  margin: 20px auto;
+  max-width: 30%;
+}
+
+#button_cmp input{
+  background-color: rgba(0, 0, 0, 0);
+  color: #28AF78;
+  font-size: 1.5vw;
+  padding: 5px 20px 5px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0,0);
+}
+#button_cmp input:hover{
+  color: #00d36f;
+  background-color: aliceblue;
+}

@@ -1,0 +1,31 @@
+<app-modal></app-modal>
+<div id='Userlist'>
+  <ul>
+    <li (click)="AllVisible()">すべて({{Employee}}名)</li>
+    <li (click)="AdminSort()">管理者({{Admin}}名)</li>
+  </ul>
+
+  <div id="Emplist">
+    <table>
+	     <thead>
+			  <tr>
+				  <th>氏名</th>
+		      <th>メールアドレス</th>
+			    <th>権限</th>
+		    </tr>
+	    </thead>
+	     <tbody>
+        <tr *ngFor="let Emp of VisibleList" (click)='EmpSetting(Emp)'>
+          <td>{{Emp.first_name}}</td>
+          <td>{{Emp.email}}</td>
+          <td *ngIf='Emp.last_name == false'>
+            一般
+          </td>
+          <td *ngIf='Emp.last_name == true'>
+            管理者
+          </td>
+        </tr>
+	    </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<div id='container'>
+  <div class='box'>
+    <p>氏名</p>
+    <div class="name">
+      <input type="text" [(ngModel)]="FirstName" placeholder="姓">
+      <input type="text" [(ngModel)]="LastName" placeholder="名">
+    </div>
+  </div>
+
+  <div class='box'>
+    <p>メールアドレス</p>
+    <div>
+      <input type="text" [(ngModel)]="MailAdress" placeholder="メールアドレス">
+    </div>
+  </div>
+
+  <div class='box'>
+    <p>パスワード</p>
+    <div>
+      <input type="text" [(ngModel)]="PassWord" placeholder="パスワード">
+    </div>
+  </div>
+
+  <div class='box'>
+    <p>性別</p>
+    <div>
+      <select class="form-control" class='select' [(ngModel)]="Gender" >
+        <option value="male">男</option>
+        <option value="famale">女</option>
+      </select>
+    </div>
+  </div>
+
+  <p id='error' *ngIf='Error'>{{Error}}</p>
+  <div id="buttoncmp">
+    <input type="button" value="完了" (click)="Create_User()" >
+  </div>
+</div>

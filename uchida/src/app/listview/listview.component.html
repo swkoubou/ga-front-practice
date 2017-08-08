@@ -1,0 +1,39 @@
+
+<div id='container'>
+
+<div class='item box-2'>
+  <div class='contents-l'>
+    <div class="calender" calender></div>
+  </div>
+  <footer>WorkTime</footer>
+</div>
+
+<div class='item'>
+  <div class='contents'>
+    <div class='chart' style="display: block">
+      <canvas baseChart
+        [datasets]="barChartData"
+        [labels]="barChartLabels"
+        [options]="barChartOptions"
+        [legend]="barChartLegend"
+        [chartType]="barChartType">
+      </canvas>
+    </div>
+  </div>
+  <footer>Steps</footer>
+</div>
+
+<div class='item'>
+  <div class='contents'>
+  <div class='chart' style="display: block">
+    <canvas baseChart
+        [datasets]="lineChartData"
+        [labels]="lineChartLabels"
+        [options]="barChartOptions"
+        [legend]="barChartLegend"
+        [chartType]="lineChartType"></canvas>
+  </div>
+</div>
+  <footer>Heart Beat</footer>
+</div>
+</div>

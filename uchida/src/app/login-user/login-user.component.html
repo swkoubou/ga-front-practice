@@ -1,0 +1,27 @@
+<header>
+  <img src='assets/images/gestion-logo.png' />
+</header>
+
+<div id='container'>
+  <h1>ログイン</h1>
+
+  <ul id="koumoku" style="list-style-type:decimal">
+    <li>グループ名の確認</li>
+    <li>メールアドレス・パスワードの確認</li>
+  </ul>
+
+  <form #f="ngForm" action="Change_Page()">
+
+    <input name="name"[(ngModel)]="MailAdress" class='form'  placeholder="メールアドレス">
+    <input type="password" name="name"[(ngModel)]="PassWord" class='form'  placeholder="パスワード">
+
+    <p id='error' *ngIf='Error'>{{Error}}</p>
+
+    <div id='buttoncmp'>
+      <input type="submit" id='login' value=" ログイン " (click)='UserLogin()'>
+      <input type="button" id='cancel' value=" キャンセル " (click)='Back_Page()'>
+    </div>
+
+  </form>
+
+</div>

@@ -1,0 +1,16 @@
+<div id='container'>
+  <div id='top'>
+    <ul class='list'>
+      <li (click)='Change_UserSetting()' [style.border-bottom]="SelectUserSetting ? '3px solid #FFF280' : 'none'">個人設定</li>
+      <li (click)='Change_CreateUser()' *ngIf='Admin' [style.border-bottom]="SelectCreateUser ? '3px solid #FFF280' : 'none'">新規追加</li>
+      <li (click)='Change_UserList()' *ngIf='Admin' [style.border-bottom]="SelectUserList ? '3px solid #FFF280' : 'none'">ユーザ一覧</li>
+    </ul>
+  </div>
+
+  <div id='right'>
+    <app-userlist *ngIf='UserList'></app-userlist>
+    <app-createuser *ngIf='CreateUser'></app-createuser>
+    <app-usersetting *ngIf='UserSetting'></app-usersetting>
+  </div>
+
+</div>

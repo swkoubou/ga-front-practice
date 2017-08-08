@@ -1,0 +1,134 @@
+#left{
+  width: 15%;
+  height: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  border-right: 1px solid #e0e0e0;
+  background-color: #193C4D;
+  color: white;
+  z-index: 20;
+}
+#left img{
+  width: 30%;
+  border-radius: 50px;
+  margin-top: 5vh;
+  margin-left: 2vw;
+}
+#left header {
+  background-color: #002537;
+  height: 20%;
+}
+#left header p{
+  color: white;
+  margin-top: 10px;
+  margin-left: 2vw;
+}
+#left table{
+  margin: 25px auto;
+  width: 90%;
+  font-size: 0.8vw;
+}
+
+
+#right{
+    width: 85%;
+    height: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 15%;
+    background: #F4F4F4;
+}
+#right header{
+  height: 7%;
+  background-color: #00E676;
+  text-align: center;
+  box-shadow: 0 4px 1px rgba(0,0,0,0.2);
+}
+#right header img{
+  margin-top: 0%;
+  height: 100%;
+}
+
+#triggar i{
+  width: 50px;
+  height: 50px;
+  font-size: 1.2vw;
+  cursor: pointer;
+  text-align: center;
+  background-color: #009250;
+  border-radius: 50%;
+  box-shadow: 0 7px 2px 0 rgba(0,0,0,.12), 0 2px 2px 0 rgba(0,0,0,.24);
+  vertical-align: middle;
+  line-height: 3.5vw;
+  transition: transform .3s;
+}
+
+#triggar i:active{
+  transform: rotate(360deg);
+}
+#triggar:hover{
+  color: #888;
+}
+
+#menu {
+  margin: 0 0 20px 0;
+  z-index: 110;
+  max-width: 30vw; /* メニューのwidth */
+  opacity: 0;
+  transition: .5s;
+  visibility: hidden;
+}
+#menu li{
+  font-size: 1vw;
+  margin-top: 1vh;
+  cursor: pointer;
+  list-style: none;
+  text-align: right;
+}
+#menu li:hover{
+  color: #888;
+}
+#menu i{
+  width: 40px;
+  height: 40px;
+  font-size: 1vw;
+  cursor: pointer;
+  text-align: center;
+  background-color: #009250;
+  border-radius: 50%;
+  box-shadow: 0 7px 10px 0 rgba(0,0,0,.12), 0 2px 10px 0 rgba(0,0,0,.24);
+  vertical-align: middle;
+  margin-left: 10px;
+  line-height: 3vw;
+}
+
+#flag{
+  display: none;
+}
+
+#flag:checked + #menu{
+  visibility: visible;
+  opacity: 1;
+}
+
+#list{
+  position: fixed;
+  top: 60vh;
+  left: 85vw;
+  text-align: right;
+}
+
+footer{
+  font-size:.7vw;
+  position: absolute;
+  bottom:1%;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.material-icons{
+  color: white;
+}

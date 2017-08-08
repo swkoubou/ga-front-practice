@@ -1,0 +1,43 @@
+<header>
+  <img src='assets/images/gestion-logo.png' />
+</header>
+
+<div id='container'>
+  <div *ngIf='!Success'>
+    <h1>グループの作成</h1>
+
+    <form #f="ngForm" action="Change_Page()">
+      <input name="name"[(ngModel)]="GroupName" class='form'  placeholder="グループ名">
+      <input name="name"[(ngModel)]="FirstName" class='form'  placeholder="管理者の苗字">
+      <input name="name"[(ngModel)]="LastName" class='form'  placeholder="管理者の名前">
+
+      <select class="select" [(ngModel)]="Sex" name='name'>
+        <option value='' disabled selected>性別</option>
+        <option value="male">男</option>
+        <option value="famale">女</option>
+      </select>
+
+      <input type='password' name="name"[(ngModel)]="PassWord" class='form'  placeholder="パスワード">
+      <input name="name"[(ngModel)]="MailAdress" class='form'  placeholder="管理者のメールアドレス">
+
+      <p id='error' *ngIf='error'>{{error}}</p>
+
+      <div id='buttoncmp'>
+        <input type="submit" id='login' value=" 作成 " (click)='UserLogin()'>
+        <input type="button" id='cancel' value=" キャンセル " (click)='Back_Page()'>
+      </div>
+    </form>
+  </div>
+  <div *ngIf='Success'>
+    <h1>グループ作成完了！</h1>
+    <p id='successmessage'>
+      　グループ名:{{GroupName}}<br />
+        管理者のメールアドレス:{{MailAdress}}<br />
+        管理者のパスワード:{{PassWord}}<br /><br />
+        この３つはログイン時に必要なので忘れないでください
+    </p>
+    <div id='buttoncmp'>
+      <input type="button" id='cancel' value=" 戻る " (click)='Back_Page()'>
+    </div>
+  </div>
+</div>

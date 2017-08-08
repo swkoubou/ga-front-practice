@@ -1,0 +1,26 @@
+<header>
+  <img src='assets/images/gestion-logo.png' />
+</header>
+
+<div id='container'>
+  <h1>ログイン</h1>
+
+  <ul style="list-style-type:decimal">
+    <li>グループ名の確認</li>
+    <li>メールアドレス・パスワードの確認</li>
+  </ul>
+
+  <form #f="ngForm" (ngSubmit)="Change_Page()">
+
+    <input type="text" name="name" [(ngModel)]="GroupName" class='form' placeholder="グループ名"><br />
+
+    <p id='error' *ngIf='Error'>{{Error}}</p>
+
+    <div id='buttoncmp'>
+      <input type="submit" class='next' value="次へ" (click)='Change_Page()'>
+      <input type="button" class='next' value="グループ作成" (click)='Change_CreateGroup()'>
+    </div>
+
+  </form>
+
+</div>
